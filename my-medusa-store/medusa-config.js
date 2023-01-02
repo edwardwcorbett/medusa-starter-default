@@ -23,10 +23,10 @@ try {
 }
 
 // CORS when consuming Medusa from admin
-const ADMIN_CORS = process.env.ADMIN_CORS || "https://chic-madeleine-4b766e.netlify.app";
+const ADMIN_CORS = process.env.ADMIN_CORS || "https://chic-madeleine-4b766e.netlify.app:7000,https://chic-madeleine-4b766e.netlify.app:7001,";
 
 // CORS to avoid issues when consuming Medusa from a client
-const STORE_CORS = process.env.STORE_CORS || "https://main--taupe-lollipop-df09d2.netlify.app/";
+const STORE_CORS = process.env.STORE_CORS || "https://main--taupe-lollipop-df09d2.netlify.app:8000";
 
 // Database URL (here we use a local database called medusa-development)
 const DATABASE_URL =
