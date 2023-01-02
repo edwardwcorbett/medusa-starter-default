@@ -23,17 +23,17 @@ try {
 }
 
 // CORS when consuming Medusa from admin
-const ADMIN_CORS = process.env.ADMIN_CORS || "http://localhost:7000,http://localhost:7001";
+const ADMIN_CORS = process.env.ADMIN_CORS || "https://chic-madeleine-4b766e.netlify.app";
 
 // CORS to avoid issues when consuming Medusa from a client
-const STORE_CORS = process.env.STORE_CORS || "http://localhost:8000";
+const STORE_CORS = process.env.STORE_CORS || "https://main--taupe-lollipop-df09d2.netlify.app/";
 
 // Database URL (here we use a local database called medusa-development)
 const DATABASE_URL =
-  process.env.DATABASE_URL || "postgres://localhost/medusa-store";
+  process.env.DATABASE_URL || "postgres://yqpkvehswylfoi:055ebb88441181a46825be1b71c125efaa8fda9447596e8510a4cb1318d59df3@ec2-3-230-122-20.compute-1.amazonaws.com:5432/d867vgiasg2lj0";
 
 // Medusa uses Redis, so this needs configuration as well
-const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
+const REDIS_URL = process.env.REDIS_URL || "redis://default:yTitmYZzv8iawiVV4KpHu5K5bctsqawj07CQjUdTlpbkfyy8uf1PcA5zkYKOV8JG@5to7xa.stackhero-network.com:6379";
 
 // Stripe keys
 const STRIPE_API_KEY = process.env.STRIPE_API_KEY || "";
